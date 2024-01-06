@@ -1,0 +1,229 @@
+ @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+      
+      --Very-dark-cyan: hsl(183, 100%, 15%);
+      --Dark-Grayish-cyan: hsl(186, 14%, 43%);
+      --Grayish-Cyan: hsl(184, 14%, 56%);
+      --Light-grayish-cyan:hsl(185, 41%, 84%);
+      --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+      --White: hsl(0, 0%, 100%);
+      --Strong-cyan: hsl(172, 67%, 45%)
+    }
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Space Mono', sans-serif;
+  color: var(--Dark-Grayish-cyan);
+  background: var(--Light-grayish-cyan);
+  /* overflow: hidden; */
+
+}
+h1{
+  max-width: 10%;
+  margin:3rem auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+[type='number']{
+  text-align: right;
+  font-family: inherit;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  background-color: var(--Very-light-grayish-cyan);
+  border: none;
+  font-weight: 700;
+  color: var(--Very-dark-cyan); 
+  border-radius: 0.5rem;
+}
+
+[type='number']:focus{
+  outline: none;
+  box-shadow: 0 0 0 0.2rem var(--White) 0 0 0.4rem var(--Very-dark-cyan);
+}
+
+.app{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  max-width: 60%;
+  margin: 0 auto;
+  background-color: var(--White);
+  border-radius: 1rem;
+  padding: 2rem;
+  gap: 1rem;
+  display: flex;
+}
+
+.bill{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.icon{
+  position: absolute;
+  left: 10px;
+  top: 70%;
+  transform: translateY(-50%);
+}
+    
+.input-container {
+  position: relative; 
+}
+    
+.error-msg{
+  position: absolute;
+  right: 10px;
+  top:5%;
+  color: red;
+}
+.tip-section{
+  display: grid;
+  gap: .5rem;
+}
+
+.tip-amount-wrapper{
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: repeat(3,2fr);
+}
+
+.tip-amount{
+  position: relative;
+}
+
+[name="tip"]{
+position: absolute;
+opacity: 0;
+inset: 0;
+}
+
+
+[name="tip"]:hover+.tip-btn{
+  cursor: pointer;
+  background-color: var(--Grayish-Cyan);
+}
+[name="tip"]:checked+.tip-btn{
+  background-color: var(--Strong-cyan);
+}
+ 
+.tip-btn{
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.input-container input:hover,.custom-input:hover,.input-container input:focus,.custom-input:focus{
+  border: 2px solid var(--Strong-cyan);
+}
+
+.display-amount{
+  width: 50%;
+  background-color: var(--Very-dark-cyan);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: auto 0.5fr;
+
+}
+
+small{
+  display: block;
+  color:var(--Grayish-Cyan) ;
+}
+
+.amount-value{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.7rem;
+    align-items: center;
+}
+
+.amount-value h4{
+  color: var(--White);
+}
+.amount{
+  font-size: 2rem;
+  color: var(--Strong-cyan);
+}
+
+.btn{
+  cursor: pointer;
+  width: 100%;
+  background-color: var(--Strong-cyan);
+  border: none;
+  margin-top: 60px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--Very-dark-cyan);  
+}
+ .btn[disabled]{
+  opacity: 0.2;
+  cursor: not-allowed;
+ }
+
+.btn:hover,.button-input:hover,.button-input:not(disabled):focus{
+  background-color: var(--Light-grayish-cyan);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media(max-width:768px) {
+ label,p{
+  font-size: .7rem;
+ }
+  .container {
+    max-width: 80%;
+    flex-direction: column;
+  }
+  .bill{
+    width: 100%;
+  }
+  .display-amount{
+    width: 100%;
+  }
+  .tip-amount-wrapper{
+  grid-template-columns: repeat(2,3fr);
+}
+.amount-value h4{
+  font-size: 0.7rem;
+}
+.amount{
+  font-size: 1rem;
+}
+}
