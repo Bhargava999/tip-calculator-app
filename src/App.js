@@ -27,9 +27,8 @@ export default function App() {
   }
   return (
     <main className="app">
-      <h1>
-        <img src={Logo} alt="logo" />
-      </h1>
+      \
+      <img src={Logo} alt="logo" id="logo" />
       <div className="container">
         <Bill
           bill={bill}
