@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Tip Calculator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [Built with](#built-with)
+- [Features](#features)
+-[What I Learnded](#what-i-learned)
+- [Usage](#usage)
+-[Links](#links)
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Built with
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Css
+- React
+- Styled Components
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Calculate tip and total cost per person based on bill amount, number of people, and selected tip percentage.
+- Responsive design for optimal user experience on various screen sizes.
+- Option to input a custom tip percentage.
+- Reset button to clear all input fields and results.
 
-### `npm run build`
+### What I Learned
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+During the development of this Tip Calculator app, I gained valuable insights and skills:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React State Management:** Utilized the `useState` hook to manage and update state variables for bill amount, number of people, selected tip percentage, and custom tip input.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Conditional Rendering:** Implemented conditional rendering to display error messages and prevent calculations when input values are not valid.
 
-### `npm run eject`
+- **Responsive Design:** Employed mobile-first design principles and utilized Flexbox and CSS Grid to create a responsive layout that adapts to various screen sizes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Form Handling:** Managed form inputs for bill amount, number of people, and custom tip using controlled components, ensuring a smooth user experience.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Dynamic Calculation:** Implemented logic to dynamically calculate tip and total amounts based on user inputs, with consideration for edge cases such as zero values.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React Component Structure:** Organized the code into functional components, promoting reusability and maintainability.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Event Handling:** Used event handlers to capture user interactions, such as changing input values and selecting tip percentages.
 
-## Learn More
+- **Styled Components:** Leveraged the Styled Components library for styling, enabling a more modular and maintainable CSS approach.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+These learnings have enhanced my proficiency in React development, state management, and responsive design, contributing to my overall growth as a front-end developer.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Links
 
-### Code Splitting
+- Solution URL: [Add solution URL here](https://github.com/Bhargava999/tip-calculator-app)
+- Live Site URL: [Add live site URL here](https://bhargava999.github.io/tip-calculator-app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   git clone https://github.com/Bhargava999/tip-calculator-app.git
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Frontend Mentor - [@bhargava-manikanta](https://www.frontendmentor.io/profile/Bhargava999)
+- Linkden - [@bhargava-manikanta](https://www.linkedin.com/in/bhargava-manikanta-mamidisetti-1022a3222/)
