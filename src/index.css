@@ -26,8 +26,8 @@ body{
   /* overflow: hidden; */
 
 }
-.logo{
-  
+
+#logo{
   margin-top: 2rem;
 }
 
@@ -205,25 +205,28 @@ small{
 }
 @media(max-width:768px) {
  label,p{
-  font-size: .7rem;
+  font-size: .5rem;
  }
   .container {
     max-width: 80%;
     flex-direction: column;
+    padding: 1rem;
   }
   .bill{
     width: 100%;
   }
   .display-amount{
     width: 100%;
+    padding: 1rem;
   }
   .tip-amount-wrapper{
   grid-template-columns: repeat(2,3fr);
 }
 .amount-value h4{
-  font-size: 0.7rem;
+  font-size: 0.5rem;
 }
 .amount{
-  font-size: 1rem;
+  font-size: .8rem;
+  padding: 0.2rem;
 }
 }
